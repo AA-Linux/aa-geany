@@ -9,13 +9,13 @@ install_geany() {
         fi
         echo -e "\e[0;32m Copy the files for your .config\e[0m"
         cp -r `pwd`/files/*  "$HOME"/.config/geany
-        echo -e "\e[0;32m+---------Finished!---------+\e[0m"
+        echo -e "\n\e[0;32m+---------Finished!---------+\e[0m"
     else
-        echo -e "\e[0;32m+---Install Geany---+\e[0m"
+        echo -e "\e[0;32m+---Install Geany---+\e[0m\n"
         sudo pacman -S geany
         echo -e "\e[0;32m Copy the files for your .config\e[0m"
         cp -r `pwd`/files/*  "$HOME"/.config/geany
-        echo -e "\e[0;32m+-----Finished!-----+\e[0m"
+        echo -e "\n\e[0;32m+-----Finished!-----+\e[0m"
     fi
 }
 install_geany
